@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOF DB - Machine learning-ready datasets for Metal-Organic Framework materials research </title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div data-include="header"></div>
+
+    <section class="hero">
+        <h1>MOF DB</h1>
+        <p class="hero-subtitle">
+            Machine learning-ready datasets for Metal-Organic Framework materials research
+        </p>
+        <div style="max-width: 800px; margin: 2rem auto 0; padding-top: 2rem; border-top: 1px solid rgba(255, 255, 255, 0.3);">
+            <p class="hero-description">
+                Our datasets integrate multiple trusted data sources and are specifically designed for machine learning applications, providing structured data formats and comprehensive features for training predictive models and conducting large-scale screening.
+            </p>
+        </div>
+    </section>
+
+    <div class="container">
+        <section id="datasets">
+            <div class="datasets-grid">
+                <div class="dataset-card">
+                    <div class="dataset-icon">💧</div>
+                    <h3>H2MOF-ML Dataset</h3>
+                    <p>
+                        A comprehensive dataset of MOFs for hydrogen storage, containing structural data and four key hydrogen adsorption capacity metrics derived from GCMC simulations at standard and temperature–pressure swing conditions.
+                    </p>
+                    <div class="dataset-meta">
+                        <span class="meta-tag">Version v1.0</span>
+                        <span class="meta-tag">4,034 Structures</span>
+                        <span class="meta-tag">Machine Learning</span>
+                        <span class="meta-tag">GCMC Data</span>
+                        <span class="meta-tag">H2 Adsorption</span>
+                        <span class="meta-tag" style="background: #28a745; color: white;">For Training</span>
+                    </div>
+                    <div style="display: flex; gap: 1rem; margin-top: 1.5rem;">
+                        <a href="pages/h2mof-ml.html" class="btn" style="flex: 1; text-align: center; min-width: 0;">View Dataset</a>
+                        <a href="https://huggingface.co/datasets/ytbai/H2MOF-ML/blob/main/H2MOF-ML.json" class="btn btn-secondary" style="flex: 1; text-align: center; min-width: 0;" target="_blank" rel="noopener noreferrer">Download</a>
+                    </div>
+                </div>
+
+                <div class="dataset-card">
+                    <div class="dataset-icon">🗄️</div>
+                    <h3>hMOF-ML Dataset</h3>
+                    <p>
+                        A massive hypothetical MOF database with comprehensive structural and property data, enabling high-throughput computational screening, material discovery, and gas adsorption prediction for various applications.
+                    </p>
+                    <div class="dataset-meta">
+                        <span class="meta-tag">Version v1.0</span>
+                        <span class="meta-tag">137,953 Structures</span>
+                        <span class="meta-tag">Machine Learning</span>
+                        <span class="meta-tag">Hypothetical MOFs</span>
+                        <span class="meta-tag">Multi-Property</span>
+                        <span class="meta-tag" style="background: #ffc107; color: #333;">For Prediction</span>
+                    </div>
+                    <div style="display: flex; gap: 1rem; margin-top: 1.5rem;">
+                        <a href="pages/dataset-hmof.html" class="btn" style="flex: 1; text-align: center; min-width: 0;">View Dataset</a>
+                        <a href="https://huggingface.co/datasets/ytbai/hMOF-ML/blob/main/hMOF-ML.json" class="btn btn-secondary" style="flex: 1; text-align: center; min-width: 0;" target="_blank" rel="noopener noreferrer">Download</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="docs" class="docs-section">
+            <h2>📚 Documentation</h2>
+            <div class="docs-grid">
+                <a href="pages/quick-start.html" class="doc-item">
+                    <h4>🚀 Quick Start</h4>
+                    <p>Learn how to access and use MOF datasets</p>
+                </a>
+                <a href="pages/data-format.html" class="doc-item">
+                    <h4>📋 Data Format</h4>
+                    <p>Detailed data fields and format description</p>
+                </a>
+            </div>
+        </section>
+
+        <section id="models" class="docs-section">
+            <h2>🤖 Model Showcase</h2>
+            <div class="docs-grid">
+                <a href="https://mofs.dev/" class="doc-item" target="_blank" rel="noopener noreferrer">
+                    <h4>MOF Hydrogen Storage Capacity Model</h4>
+                    <p>Under conditions ranging from 77 K / 100 bar to 160 K / 5 bar. Predict hydrogen storage capacities by uploading CIF files and entering structural properties.</p>
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <div data-include="footer"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
